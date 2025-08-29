@@ -17,7 +17,6 @@ public class Livro {
 		System.out.println("Descrição: " +descricao);
 		System.out.println("Valor: " +valor);
 		System.out.println("ISBN: " +isbn);
-		System.out.println("--");
 		
 		autor.mostrarDetalhes();
 		System.out.println("--");
