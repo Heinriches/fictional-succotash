@@ -12,7 +12,6 @@ public class Autor {
 		System.out.println("Nome: " +nome);
 		System.out.println("e-Mail: " +email);
 		System.out.println("CPF: " +cpf);
-		System.out.println("--");
 		
 	}
 	
