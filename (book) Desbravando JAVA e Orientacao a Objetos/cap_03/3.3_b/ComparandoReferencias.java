@@ -22,5 +22,17 @@ public class ComparandoReferencias{
 		} else {
 			System.out.println("Hein?! Por quê diferentes?");
 		}
+		
+		//
+		Livro livro = new Livro();
+		
+		livro.autor = autor;
+		
+		livro.autor.nome = "Guilherme Silveira";
+		
+		
+		//
+		System.out.println(autor.nome);
+		
 	}
 }

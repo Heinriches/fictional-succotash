@@ -5,4 +5,6 @@ public class Livro{
 	double valor;
 	String isbn;
 	
+	Autor autor;
+	
 }
