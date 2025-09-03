@@ -2,6 +2,7 @@ package livraria;
 
 public class Livro {
 	
+	//
 	String nome;
 	String descricao;
 	double valor;
@@ -9,7 +10,7 @@ public class Livro {
 	
 	Autor autor;
 
-	
+	//
 	void mostrarDetalhes() {
 		
 		System.out.println("Mostrando detalhes do livro: ");
