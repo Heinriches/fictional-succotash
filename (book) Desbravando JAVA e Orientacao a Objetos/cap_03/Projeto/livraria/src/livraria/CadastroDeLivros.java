@@ -3,14 +3,15 @@ package livraria;
 public class CadastroDeLivros {
 	public static void main(String[] args) {
 		
-		//
+		// 1
+		// 1a
 		Autor autor = new Autor();
 		
 		autor.nome = "Rodrigo Turini";
 		autor.email = "rodrigo.turini@caelum.com.br";
 		autor.cpf = "123.456.789-10";
 		
-		//		
+		// 1b
 		Livro livro = new Livro();
 		
 		livro.nome = "Java 8 Prático";
@@ -22,14 +23,16 @@ public class CadastroDeLivros {
 		
 		livro.mostrarDetalhes();		
 		
-		//
+		
+		// 2
+		// 2a
 		Autor outroAutor = new Autor();
 		
 		outroAutor.nome = "Paulo Silveira";
 		outroAutor.email = "paulo.silveira@caelum.com.br";
 		outroAutor.cpf = "123.456.789-10";
 		
-		//		
+		// 2b
 		Livro outroLivro = new Livro();
 		
 		outroLivro.nome = "Lógica de Programação";
