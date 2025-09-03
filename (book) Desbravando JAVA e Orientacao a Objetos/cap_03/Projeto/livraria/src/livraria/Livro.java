@@ -1,8 +1,15 @@
 package livraria;
 
+/**
+ * A classe Livro representa um item de livro em uma livraria.
+ * Contém informações como nome, descrição, valor e ISBN.
+ *
+ * @author Fabio
+ */
+
 public class Livro {
 	
-	// 1
+	// --- ATRIBUTOS ---
 	String nome;
 	String descricao;
 	double valor;
@@ -10,37 +17,47 @@ public class Livro {
 	
 	Autor autor;
 
-	// 2
-	// // 2a
+	// --- MÉTODOS ---
+
+	/** Exibe os detalhes completos do livro no console.
+	 *  Se o livro tiver um autor, os detalhes do autor também serão mostrados.
+	 */
 	void mostrarDetalhes() {
 		
-		// 2a 1
 		System.out.println("Mostrando detalhes do livro: ");
 		System.out.println("Nome: " +nome);
 		System.out.println("Descrição: " +descricao);
 		System.out.println("Valor: " +valor);
 		System.out.println("ISBN: " +isbn);
 		
-		// 2a 2
-		autor.mostrarDetalhes();
-		System.out.println("--");
-				
+		if (this.temAutor()) {
+			autor.mostrarDetalhes();
+		}
+
+		System.out.println("--");				
 	}
 	
-	// // 2b
+	/**
+     * Aplica um percentual de desconto no valor do livro.
+     *
+     * @param percentagem O percentual de desconto a ser aplicado.
+     * Deve ser um valor entre 0.0 e 1.0.
+     * @throws IllegalArgumentException Se a porcentagem for negativa ou maior que 1.
+     */
 	public void aplicaDescontoDe (double percentagem) {
 	
-		// 2b 1
 		this.valor -= this.valor * percentagem;
 	}
 	
-	// // 2c
+	/**
+     * Verifica se o livro possui um autor associado.
+     *
+     * @return {@code true} se o autor não for nulo; {@code false} caso contrário.
+     */
 	public boolean temAutor() {
 		
-		// 2c 1
 		boolean naoEhNull = this.autor != null;
 		
-		// 2c 2
 		return naoEhNull;
 	}
 	
