@@ -19,7 +19,8 @@ public class Livro {
 
 	// --- MÉTODOS ---
 
-	/** Exibe os detalhes completos do livro no console.
+	/** 
+	 * Exibe os detalhes completos do livro no console.
 	 *  Se o livro tiver um autor, os detalhes do autor também serão mostrados.
 	 */
 	void mostrarDetalhes() {
