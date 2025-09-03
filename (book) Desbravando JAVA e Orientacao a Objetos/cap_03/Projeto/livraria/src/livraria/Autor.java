@@ -2,13 +2,14 @@ package livraria;
 
 public class Autor {
 	
-	//
+	// 1
 	String nome;
 	String email;
 	String cpf;
 	
 	
-	//
+	// 2
+	// // 2a
 	void mostrarDetalhes() {
 		
 		System.out.println("Mostrando detalhes do autor: ");
