@@ -17,8 +17,16 @@ public class Livro {
 	
 	Autor autor;
 
+	
 	// --- MÉTODOS ---
 
+	/**
+	 * Constructor.
+	 */
+	public Livro() {
+		System.out.println("novo livro criado");
+	}
+	
 	/** 
 	 * Exibe os detalhes completos do livro no console.
 	 *  Se o livro tiver um autor, os detalhes do autor também serão mostrados.
