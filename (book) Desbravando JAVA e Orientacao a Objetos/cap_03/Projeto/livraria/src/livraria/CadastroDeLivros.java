@@ -1,17 +1,27 @@
 package livraria;
 
+/**
+ * A classe CadastroDeLivros é um ponto de entrada para a aplicação de cadastro de livros.
+ * Ela demonstra a criação e a interação com objetos das classes Livro e Autor.
+ *
+ * @author Fabio
+ */
+
 public class CadastroDeLivros {
+    /**
+     * O método main é o ponto de partida do programa.
+     *
+     * @param args Argumentos de linha de comando. Não são utilizados neste programa.
+     */
 	public static void main(String[] args) {
 		
-		// 1
-		// // 1a
+		// --- Instanciando e configurando o primeiro livro e seu autor ---
 		Autor autor = new Autor();
 		
 		autor.nome = "Rodrigo Turini";
 		autor.email = "rodrigo.turini@caelum.com.br";
 		autor.cpf = "123.456.789-10";
 		
-		// // 1b
 		Livro livro = new Livro();
 		
 		livro.nome = "Java 8 Prático";
@@ -24,15 +34,13 @@ public class CadastroDeLivros {
 		livro.mostrarDetalhes();		
 		
 		
-		// 2
-		// // 2a
+		// --- Instanciando e configurando o segundo livro e seu autor ---
 		Autor outroAutor = new Autor();
 		
 		outroAutor.nome = "Paulo Silveira";
 		outroAutor.email = "paulo.silveira@caelum.com.br";
 		outroAutor.cpf = "123.456.789-10";
 		
-		// // 2b
 		Livro outroLivro = new Livro();
 		
 		outroLivro.nome = "Lógica de Programação";
