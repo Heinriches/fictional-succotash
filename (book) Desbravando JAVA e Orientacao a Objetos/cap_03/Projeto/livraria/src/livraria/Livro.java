@@ -34,4 +34,14 @@ public class Livro {
 		this.valor -= this.valor * percentagem;
 	}
 	
+	// // 2c
+	public boolean temAutor() {
+		
+		// 2c 1
+		boolean naoEhNull = this.autor != null;
+		
+		// 2c 2
+		return naoEhNull;
+	}
+	
 }
