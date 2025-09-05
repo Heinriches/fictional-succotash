@@ -9,6 +9,11 @@ package livraria;
  * @author fabio
  */
 public class RegrasDeDesconto {
+	/**
+     * O método main é o ponto de partida do programa.
+     *
+     * @param args Argumentos de linha de comando. Não são utilizados neste programa.
+     */
 	public static void main(String[] args) {
 		
 		Livro livro = new Livro();
