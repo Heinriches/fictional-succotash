@@ -29,7 +29,7 @@ public class Livro {
 	
 	/** 
 	 * Exibe os detalhes completos do livro no console.
-	 *  Se o livro tiver um autor, os detalhes do autor também serão mostrados.
+	 * Se o livro tiver um autor, os detalhes do autor também serão mostrados.
 	 */
 	void mostrarDetalhes() {
 		
@@ -50,12 +50,18 @@ public class Livro {
      * Aplica um percentual de desconto no valor do livro.
      *
      * @param percentagem O percentual de desconto a ser aplicado.
-     * Deve ser um valor entre 0.0 e 1.0.
-     * @throws IllegalArgumentException Se a porcentagem for negativa ou maior que 1.
+     * Deve ser um valor entre 0.0 e 0.3 (representando de 10 a 30% de desconto).
+     * 
+     * @throws IllegalArgumentException Se a porcentagem for negativa ou maior que 0.3.
      */
-	public void aplicaDescontoDe (double percentagem) {
+	public boolean aplicaDescontoDe (double percentagem) {
 	
+		if(percentagem > 0.3) {
+			return false;
+		}
+		
 		this.valor -= this.valor * percentagem;
+		return true;
 	}
 	
 	/**
