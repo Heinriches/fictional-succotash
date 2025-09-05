@@ -1,27 +1,53 @@
 package livraria;
 
+/**
+ * A classe `Autor` representa um autor de uma obra na livraria.
+ * Contém informações essenciais como nome, email e CPF do autor.
+ *
+ * @author fabio
+ * @version 1.0
+ * @since 1.0
+ */
 public class Autor {
 	
-	// 1
+	// --- ATRIBUTOS ---
+	
+	/**
+	 * O nome completo do autor.
+	 */
 	private String nome;
+	
+	/**
+	 * O endereço de email do autor.
+	 */
 	private String email;
+	
+	/**
+	 * O CPF (Cadastro de Pessoas Físicas) do autor.
+	 */
 	private String cpf;
 	
 	
-	// 2
-	// // 2a
-	void mostrarDetalhes() {
+	// --- MÉTODOS ---
+
+	/**
+	 * Exibe no console as informações detalhadas do autor,
+	 * incluindo nome, email e CPF.
+	 */
+	public void mostrarDetalhes() {
 		
 		System.out.println("Mostrando detalhes do autor: ");
-		System.out.println("Nome: " +nome);
-		System.out.println("e-Mail: " +email);
-		System.out.println("CPF: " +cpf);
+		System.out.println("Nome: " + nome);
+		System.out.println("e-Mail: " + email);
+		System.out.println("CPF: " + cpf);
 		
 	}
 
 
 	/**
-	 * @return the nome
+	 * Retorna o nome do autor.
+	 *
+	 * @return O nome do autor como uma {@code String}.
 	 */
 	public String getNome() {
 		return nome;
@@ -29,7 +55,9 @@ public class Autor {
 
 
 	/**
-	 * @param nome the nome to set
+	 * Define o nome do autor.
+	 *
+	 * @param nome O nome do autor a ser definido.
 	 */
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -37,7 +65,9 @@ public class Autor {
 
 
 	/**
-	 * @return the email
+	 * Retorna o email do autor.
+	 *
+	 * @return O email do autor como uma {@code String}.
 	 */
 	public String getEmail() {
 		return email;
@@ -45,7 +75,9 @@ public class Autor {
 
 
 	/**
-	 * @param email the email to set
+	 * Define o email do autor.
+	 *
+	 * @param email O email do autor a ser definido.
 	 */
 	public void setEmail(String email) {
 		this.email = email;
@@ -53,7 +85,9 @@ public class Autor {
 
 
 	/**
-	 * @return the cpf
+	 * Retorna o CPF do autor.
+	 *
+	 * @return O CPF do autor como uma {@code String}.
 	 */
 	public String getCpf() {
 		return cpf;
@@ -61,7 +95,9 @@ public class Autor {
 
 
 	/**
-	 * @param cpf the cpf to set
+	 * Define o CPF do autor.
+	 *
+	 * @param cpf O CPF do autor a ser definido.
 	 */
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
