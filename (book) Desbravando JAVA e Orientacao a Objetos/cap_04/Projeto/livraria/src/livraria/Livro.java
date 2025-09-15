@@ -23,8 +23,8 @@ public class Livro {
 	/**
 	 * Constructor.
 	 */
-	public Livro() {
-		System.out.println("novo livro criado");
+	public Livro(Autor autor) {
+		this.autor = autor;
 	}
 	
 	/** 
