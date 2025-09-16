@@ -9,7 +9,10 @@ package livraria;
 
 public class Livro {
 	
+	//	---	---	---	---	---	---	---	---	---	---
+	
 	// --- ATRIBUTOS ---
+	
 	private String nome;
 	private String descricao;
 	private double valor;
@@ -17,21 +20,33 @@ public class Livro {
 	
 	private Autor autor;
 
+	//	---	---	---	---	---	---	---	---	---	---
+	
 	
 	// --- MÉTODOS ---
 
 	/**
-	 * Constructor.
+	 * Constructores.
+	 * (1) Padrão - sem argumentos;
+	 * (2) Específico - com argumento.
 	 */
+	public Livro() {
+		this.isbn = "000-00-00000-00-0";
+	}
 	public Livro(Autor autor) {
+		this();
 		this.autor = autor;
 	}
 	
+	
+	//	--- Métodos Públicos	---
+	
 	/** 
+	 * (01)
 	 * Exibe os detalhes completos do livro no console.
 	 * Se o livro tiver um autor, os detalhes do autor também serão mostrados.
 	 */
-	void mostrarDetalhes() {
+	public void mostrarDetalhes() {
 		
 		System.out.println("Mostrando detalhes do livro: ");
 		System.out.println("Nome: " +nome);
@@ -47,6 +62,7 @@ public class Livro {
 	}
 	
 	/**
+	 * (02)
      * Aplica um percentual de desconto no valor do livro.
      *
      * @param percentagem O percentual de desconto a ser aplicado.
@@ -65,6 +81,7 @@ public class Livro {
 	}
 	
 	/**
+	 * (03)
      * Verifica se o livro possui um autor associado.
      *
      * @return {@code true} se o autor não for nulo; {@code false} caso contrário.
@@ -76,6 +93,9 @@ public class Livro {
 		return naoEhNull;
 	}
 
+	
+	//	--- Getters and Setters	---
+	
 	/**
 	 * @return the nome
 	 */
